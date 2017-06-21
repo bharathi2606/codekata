@@ -1,4 +1,4 @@
-n=raw_input();
+n=int(raw_input());
 if(n>0):
   print " positive number";
 elif(n==0):
