@@ -1,5 +1,7 @@
+
 d={'V':5,'X':10}
 s=raw_input()
+s=s.upper()
 v=-1;
 x=-1;
 n=0
@@ -14,6 +16,10 @@ if 'V' in s:
 	print no
 else:
 	if 'X' in s:
-		print d['X']
+		v=s.index('X')
+		if v!=0:
+			n=s.count('I',0,v)
+		no=d['X']-n
+		print no
 	else:
 		print s.count('I')
